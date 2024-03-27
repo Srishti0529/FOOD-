@@ -1,0 +1,259 @@
+/* CSS reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables  */
+:root {
+    --navbar-height: 59pz;
+}
+
+
+/* logo image  */
+#logo {
+    margin: 10px 10px;
+}
+
+#logo img {
+    width: 75px;
+    height: 50px;
+}
+
+/* list items  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* home section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+}
+
+#home::before {
+    content: "";
+    background: url(bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8
+}
+
+#home h1 {
+    color: rgb(11, 3, 3);
+    text-align: center;
+    font-style: italic;
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+/* utility class  */
+.h-primary {
+    font-size: 3rem;
+    padding: 15px;
+}
+
+.h-secondary {
+    font-size: 2rem;
+    padding: 15px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 3px solid black;
+    background-color: lightgray;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(186, 91, 91);
+    border-radius: 20px;
+}
+
+/* services center  */
+.center {
+    text-align: center;
+}
+
+#services h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-style: italic
+}
+
+#services {
+    margin: 34px;
+    padding: 50px;
+    height: auto;
+    margin-bottom: -18px;
+    margin-top: 10px;
+}
+
+#services .box {
+    border: 3px solid rgb(12, 12, 12);
+    padding: 34px;
+    margin: 3px 50px;
+    border-radius: 30px;
+    background: lightgray;
+    display: table-cell;
+    font-style: oblique;
+}
+
+#services .box p {
+    font-size: 15px;
+    font-family: cursive;
+}
+
+#services .box img {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+/* client section  */
+#client-section {
+    height: 344px;
+
+}
+
+#client-section h1 {
+    padding-top: 10px;
+    font-style: italic
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+}
+
+#clients p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(bg2.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+    opacity: 0.7
+}
+
+/* contact section  */
+#contact {
+    position: relative;
+    padding-top: 100px;
+    font-style: italic;
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(contact\ us.jpg) no-repeat center center/cover;
+    opacity: 0.6
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 1rem;
+    font-family: cursive;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form {
+    width: 40%;
+
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: cursive;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
